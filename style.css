@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+
+  /* GRADIENTE (ajustable) */
+  background: linear-gradient(180deg, #ff7a3d, #ff4e1f);
+}
+
+.container {
+  width: 650px; /* un poco más grande */
+  position: relative;
+  padding: 20px;
+}
+
+/* LOGO MÁS GRANDE */
+.logo {
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* BANNER MÁS GRANDE */
+.banner {
+  position: relative;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+}
+
+/* BOTON MEJORADO (más visible) */
+.boton-banner {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+
+  /* EFECTOS PARA QUE RESALTE */
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+  transition: transform 0.2s;
+}
+
+.boton-banner:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* DECORACIONES */
+.deco {
+  position: absolute;
+  width: 100px;
+}
+
+.deco1 {
+  top: 120px;
+  left: -40px;
+}
+
+.deco2 {
+  top: 180px;
+  right: -40px;
+}
+
+.deco3 {
+  top: 320px;
+  right: 0;
+}
+
+/* POLAROIDS */
+.polaroids {
+  position: relative;
+  height: 800px;
+  margin-top: 50px;
+}
+
+/* TITULO */
+.titulo {
+  width: 270px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* POLAROIDS MÁS GRANDES */
+.p {
+  width: 220px;
+  position: absolute;
+  transition: transform 0.2s;
+}
+
+.p:hover {
+  transform: scale(1.05);
+}
+
+/* POSICIONES */
+.p1 { top: 40px; left: 20px; transform: rotate(-5deg); }
+.p2 { top: 40px; right: 20px; transform: rotate(5deg); }
+
+.p3 { top: 240px; left: 50px; transform: rotate(-3deg); }
+.p4 { top: 240px; right: 50px; transform: rotate(4deg); }
+
+.p5 { top: 450px; left: 20px; transform: rotate(-6deg); }
+.p6 { top: 450px; right: 20px; transform: rotate(6deg); }
+
+.p7 {
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+}
+
+/* STICKER */
+.sticker {
+  width: 200px;
+  display: block;
+  margin: 20px auto;
+}
